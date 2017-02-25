@@ -1,0 +1,66 @@
+Runtime:
+
+1. When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches infinity. You can think of the workload as the number of tasks required to complete a job. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+
+Your workload depends on how soon you encounter an elephant in that particular box, and how many animal crackers are in the box. Theoretically, an elephant could be the first cracker you encounter - however, since we assume the worst case scenario while determining runtime, you would assume you'd have to go through all the crackers in the box, and that you would still have a runtime of O(n). 
+
+2. Order the following runtimes in descending order of efficiency (that is, fastest runtimes first, slowest last) as n approaches infinity:
+
+O(1)
+O(log n)
+O(n)
+O(n log n)
+O(n^2)
+O(2^n)
+
+
+Stacks and Queues:
+
+1. In the following cases, would a stack or queue be a more appropriate data structure?
+    1. The process of loading and unloading pallets onto a flatbed truck: Stack
+    2. Putting bottle caps on bottles of beer as they roll down an assembly line: Queue
+    3. Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2): Stack
+
+2. Describe two more situations where a queue would be an appropriate data structure:
+
+- Standing in line to buy tickets to a show - the first person in the queue gets helped first, whereas the last person in the queue gets helped last. First in first out. 
+
+- Waiting on the phone with a customer service help line - the first person to call will be helped first, and everyone else will be put in a queue to be helped after them. 
+
+3. Describe two more situations where a stack would be an appropriate data structure.
+
+- A browser back button - gives the user immediate access to the most recent page they were on. Last in, first out. 
+
+- A stack of dishes - you would wash the dish at the top of the stack, rather than pulling out the dish from the bottom.
+
+
+Linked Lists:
+
+1. Given the linked list below, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+
+The nodes are the boxes that contain the words "Apple", "Berry", and "Cherry". The data for each node is the word contained within the string. The head is the "Apple" node, which points to the "Berry" node through the "next" attribute. "Berry" points to "Cherry" as the next node. There is no specifically assigned tail, however the last node in the linked list is "Cherry", which points to "None".
+
+2. What’s the difference between doubly- and singly-linked lists?
+
+Singly-linked lists have a "next" attribute on each node, which points to the next item in the linked list. Doubly-linked lists have both a "next" and a "prev" attribute on each node, which means you can traverse in both directions through the linked list.
+
+3. Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+
+If you keep track of the tail, you always know what the last item in the linked list is, making it easier to append to the end of the list. If you don't keep track of the tail, you need to traverse through the entire linked list in order to find the end and append to it. 
+
+
+Trees: 
+
+1. Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burritos (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+
+Food, Italian, Indian, Mexican, Lasagna, Pizza, Tikka Masala, Saag, Burritos.  
+
+
+2. Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+
+
+Food, Mexican, Enchiladas, Tacos, Burritos, Indian, Saag, Tikka Masala, Italian, Pizza, Sicilian, New York-Style, Chicago-Style.
+
+3. How is a binary search tree different from other trees?
+
+In a binary search tree, each node has at most two children. 
